@@ -7,7 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GRpcClientApplication implements CommandLineRunner {
+public class GRpcClientApplication{
 
     private StockTradingClientService stockClientService;
 
@@ -19,8 +19,5 @@ public class GRpcClientApplication implements CommandLineRunner {
     }
 
 
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println(stockClientService.getStockPrice("GOOGL"));
-    }
+
 }

@@ -5,20 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3df3013-0f63-4926-a7b7-081a17dd7b26" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanle/practice_gRPC/PracticeGRpcApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanle/practice_gRPC/entity/Stock.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanle/practice_gRPC/repository/StockTradingRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tanle/practice_gRPC/service/StockTradingGrpcServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/proto/stock_trading.proto" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tanle/practice_gRPC/PracticeGRpcApplicationTests.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gRPC-Client/src/main/java/com/tanle/gRPC_Client/controller/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPC-Client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC-Client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPC-Client/src/main/java/com/tanle/gRPC_Client/GRpcClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC-Client/src/main/java/com/tanle/gRPC_Client/GRpcClientApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPC-Client/src/main/java/com/tanle/gRPC_Client/service/StockTradingClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC-Client/src/main/java/com/tanle/gRPC_Client/service/StockTradingClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPC-Client/src/main/proto/stock_trading.proto" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC-Client/src/main/proto/stock_trading.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPC-Client/src/test/java/com/tanle/gRPC_Client/GRpcClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gRPC-Client/src/test/java/com/tanle/gRPC_Client/GRpcClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPCServer/src/main/java/com/tanle/practice_gRPC/service/StockTradingGrpcServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gRPCServer/src/main/java/com/tanle/practice_gRPC/service/StockTradingGrpcServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gRPCServer/src/main/proto/stock_trading.proto" beforeDir="false" afterPath="$PROJECT_DIR$/gRPCServer/src/main/proto/stock_trading.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +61,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.GRpcClientApplication.executor": "Run",
     "Spring Boot.PracticeGRpcApplication.executor": "Run",
     "jdk.selected.JAVA_MODULE": "21",
@@ -111,7 +109,8 @@
       <option name="presentableId" value="Default" />
       <updated>1752217610510</updated>
       <workItem from="1752217611625" duration="333000" />
-      <workItem from="1752217955130" duration="7247000" />
+      <workItem from="1752217955130" duration="7880000" />
+      <workItem from="1752246079689" duration="3477000" />
     </task>
     <servers />
   </component>
