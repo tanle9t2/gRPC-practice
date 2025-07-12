@@ -1,9 +1,7 @@
 package com.tanle.practice_gRPC.service;
 
 import com.tanle.practice_gRPC.entity.Stock;
-import com.tanle.practice_gRPC.grpc.StockRequest;
-import com.tanle.practice_gRPC.grpc.StockResponse;
-import com.tanle.practice_gRPC.grpc.StockTradingServiceGrpc;
+import com.tanle.practice_gRPC.grpc.*;
 import com.tanle.practice_gRPC.repository.StockTradingRepository;
 import io.grpc.stub.StreamObserver;
 import lombok.RequiredArgsConstructor;
@@ -34,6 +32,38 @@ public class StockTradingGrpcServiceImpl extends StockTradingServiceGrpc.StockTr
 
         responseObserver.onNext(response);
         responseObserver.onCompleted();
+    }
+
+    @Override
+    public StreamObserver<StockOrder> bulkPlaceOrder(StreamObserver<StockSummary> responseObserver) {
+        return new StreamObserver<StockOrder>() {
+            int totalOrders = 0;
+            double totalAmount = 0;
+            int successCount = 0;
+
+            @Override
+            public void onNext(StockOrder stockOrder) {
+                totalOrders++;
+                totalAmount += stockOrder.getPrice() * stockOrder.getQuantity();
+                successCount++;
+                System.out.println("Received order : " + stockOrder);
+            }
+
+            @Override
+            public void onError(Throwable throwable) {
+                responseObserver.onError(throwable);
+            }
+
+            @Override
+            public void onCompleted() {
+                responseObserver.onNext(StockSummary.newBuilder()
+                        .setTotalOrder(totalOrders)
+                        .setSuccessCount(successCount)
+                        .setTotalAmount(totalAmount)
+                        .build());
+                responseObserver.onCompleted();
+            }
+        };
     }
 
     @Override
